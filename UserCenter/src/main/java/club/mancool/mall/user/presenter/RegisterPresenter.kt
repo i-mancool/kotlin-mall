@@ -4,14 +4,17 @@ import club.mancool.mall.base.ext.execute
 import club.mancool.mall.base.presenter.BasePresenter
 import club.mancool.mall.base.rx.BaseSuscriber
 import club.mancool.mall.user.presenter.view.RegisterView
+import club.mancool.mall.user.service.UserService
 import club.mancool.mall.user.service.impl.UserServiceImpl
+import javax.inject.Inject
 
 /**
  * Created by 860117030 on 2018/3/8.
  */
-class RegisterPresenter:BasePresenter<RegisterView>() {
+class RegisterPresenter @Inject constructor():BasePresenter<RegisterView>() {
 
-    val userService = UserServiceImpl()
+    @Inject
+    lateinit var userService: UserService
 
 
 
