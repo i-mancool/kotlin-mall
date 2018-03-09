@@ -5,10 +5,6 @@ import club.mancool.mall.base.presenter.BasePresenter
 import club.mancool.mall.base.rx.BaseSuscriber
 import club.mancool.mall.user.presenter.view.RegisterView
 import club.mancool.mall.user.service.impl.UserServiceImpl
-import rx.Scheduler
-import rx.Subscriber
-import rx.android.schedulers.AndroidSchedulers
-import rx.schedulers.Schedulers
 
 /**
  * Created by 860117030 on 2018/3/8.
